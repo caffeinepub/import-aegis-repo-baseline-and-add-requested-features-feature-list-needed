@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Actor defining types for users, policies, posts, credentials, employees, and follow requests with functions to create, approve, deny, and fetch follow requests.",
+  "feature_evidence.json": "Feature evidence report listing feature IDs, linked files, components, and tests for planned AEGIS functionality.",
+  "frontend-file-summaries.txt": "Auto‑generated summaries of multiple frontend files describing their roles in the AEGIS app architecture.",
+  "frontend/docs/feature-specification.md": "Detailed multi‑feature specification outlining user stories, UI requirements, data models, backend APIs, and acceptance criteria for AEGIS.",
+  "frontend/docs/repo-ingestion.md": "Checklist describing required steps and options for ingesting the original AEGIS GitHub repository, including licensing and integration.",
+  "frontend/index.css": "Tailwind‑based global stylesheet defining warm color palettes, design tokens, and light/dark mode variables.",
+  "frontend/index.html": "Basic HTML entry point setting metadata and loading the main React application.",
+  "frontend/src/App.tsx": "Main React component handling authentication flow and rendering login screen or dashboard with follow requests, search, and stats.",
+  "frontend/src/components/DashboardStats.tsx": "Displays dashboard statistic cards, including pending follow requests with loading states.",
+  "frontend/src/components/FollowRequestsPanel.tsx": "Renders a panel listing pending follow requests with approve/deny actions and loading handling.",
+  "frontend/src/components/SearchUsers.tsx": "Provides a search UI for entering a Principal ID and sending follow requests with validation.",
+  "frontend/src/hooks/useActor.ts": "Creates and caches an authenticated or anonymous backend actor, refreshing queries when identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity authentication context, handling login, stored identity loading, and state tracking.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks for fetching and mutating follow requests and validating Principal IDs.",
+  "frontend/src/index.css": "Configures Tailwind base styles and a warm color palette with light and dark mode variables.",
+  "frontend/src/main.tsx": "Bootstraps the app with React Query and Internet Identity providers and mounts the root component.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom colors, container settings, animations, and plugins for typography, container queries, and animation.",
+  "project_state.json": "Tracks project metadata including schema versions, existing features, architectural notes, and the overall project description."
+}

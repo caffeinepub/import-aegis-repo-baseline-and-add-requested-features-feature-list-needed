@@ -1,0 +1,81 @@
+{
+  "kind": "build_request",
+  "title": "Import AEGIS repo baseline and add requested features (feature list needed)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Collect the missing specification for the \"following features\" to be added to the AEGIS codebase referenced by https://github.com/perewarvaibhav-svg/AEGIS--. Produce a concrete feature list and acceptance criteria per feature, including: (1) user stories, (2) UI screens/components to add or change, (3) data to store (if any), (4) API/integration needs (if any), (5) roles/permissions (if any), and (6) any non-functional requirements (performance, security, limits).",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "https://github.com/perewarvaibhav-svg/AEGIS-- to this add the following features"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A numbered list of features is captured with enough detail to implement each feature without further clarification.",
+        "Each feature includes user-facing copy requirements in English where applicable.",
+        "Any required data model changes are explicitly stated (entities, fields, and relationships)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Confirm project ingestion approach for the GitHub repo https://github.com/perewarvaibhav-svg/AEGIS-- by requesting the user to provide either (a) the repository contents as an upload/zip or (b) the specific files to replicate, since external GitHub fetch is not guaranteed within this build environment.",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "https://github.com/perewarvaibhav-svg/AEGIS--"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A clear plan is agreed for how the repo code will be provided/replicated into this project (zip upload or pasted file list).",
+        "Any licensing/attribution requirements from the repo are identified (if applicable)."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Define and apply a coherent visual theme for the initial UI (color palette, typography, spacing, and component styling) and use it consistently across all screens implemented for the imported AEGIS baseline and the newly added features. Avoid blue & purple as primary colors.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A single theme direction (colors/typography/layout) is chosen and applied consistently.",
+        "Theme uses Tailwind-friendly tokens/classes and remains readable with sufficient contrast.",
+        "Primary colors are not blue or purple."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for any user-facing text.",
+    "Backend must remain a single Motoko actor (no additional backend services).",
+    "Do not edit files under frontend/src/components/ui or other immutablePaths; only compose them."
+  ],
+  "nonGoals": [
+    "Implementing any new features not explicitly specified by the user.",
+    "Adding third-party auth providers other than Internet Identity.",
+    "Adding external databases or non-Motoko backend services."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

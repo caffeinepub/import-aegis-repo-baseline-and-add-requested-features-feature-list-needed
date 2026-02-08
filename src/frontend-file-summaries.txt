@@ -1,0 +1,11 @@
+{
+  "frontend/docs/feature-specification.md": "Comprehensive feature specification document detailing 5 core features (follow request management, authentication, dashboard, user search, notifications) with user stories, UI requirements, data models, backend integration, acceptance criteria, and English user-facing copy.",
+  "frontend/docs/repo-ingestion.md": "Repository ingestion checklist documenting the pending status of the AEGIS GitHub repository import, required information for integration, licensing/attribution requirements, and next steps for completing the migration.",
+  "frontend/src/App.tsx": "Main application component with Internet Identity authentication flow, landing page for unauthenticated users, and authenticated dashboard displaying follow request management, user search, and statistics panels.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including fetching pending follow requests, creating/approving/denying requests, with automatic cache invalidation, Principal ID validation helper, and BigInt-to-string conversion for query keys to comply with ESLint rules.",
+  "frontend/src/components/FollowRequestsPanel.tsx": "Card component displaying pending follow requests with approve/decline actions, real-time updates, loading states, and toast notifications for user feedback.",
+  "frontend/src/components/SearchUsers.tsx": "User search component allowing Principal ID lookup and follow request creation with validation, error handling, and helpful user guidance.",
+  "frontend/src/components/DashboardStats.tsx": "Statistics dashboard displaying pending requests count and placeholder cards for followers/following counts with loading states and color-coded icons.",
+  "frontend/src/index.css": "Global stylesheet with warm amber/terracotta color palette (avoiding blue/purple) using OKLCH color system, supporting both light and dark modes with consistent design tokens.",
+  "frontend/index.html": "HTML entry point with updated title and meta description for the AEGIS decentralized social network application."
+}

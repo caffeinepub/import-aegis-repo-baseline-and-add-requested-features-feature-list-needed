@@ -1,0 +1,61 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-collect-the-missing-specification-for-the-following-features-to-be-added-to-the-aegis-codebase-referenced-by-https-github-com-perewarvaibhav-svg-aegis-produce-a-concrete-feature-list-and-acceptance-criteria-per-feature-including-1-user-stories-2-ui-screens-components-to-add-or-change-3-data-to-store-if-any-4-api-integration-needs-if-any-5-roles-permissions-if-any-and-6-any-non-functional-requirements-performance-security-limits",
+      "featureTitle": "Collect the missing specification for the \"following features\" to be added to the AEGIS codebase referenced by https://github.com/perewarvaibhav-svg/AEGIS--. Produce a concrete feature list and acceptance criteria per feature, including: (1) user stories, (2) UI screens/components to add or change, (3) data to store (if any), (4) API/integration needs (if any), (5) roles/permissions (if any), and (6) any non-functional requirements (performance, security, limits).",
+      "files": [
+        "frontend/docs/feature-specification.md",
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-confirm-project-ingestion-approach-for-the-github-repo-https-github-com-perewarvaibhav-svg-aegis-by-requesting-the-user-to-provide-either-a-the-repository-contents-as-an-upload-zip-or-b-the-specific-files-to-replicate-since-external-github-fetch-is-not-guaranteed-within-this-build-environment",
+      "featureTitle": "Confirm project ingestion approach for the GitHub repo https://github.com/perewarvaibhav-svg/AEGIS-- by requesting the user to provide either (a) the repository contents as an upload/zip or (b) the specific files to replicate, since external GitHub fetch is not guaranteed within this build environment.",
+      "files": [
+        "frontend/docs/repo-ingestion.md"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-define-and-apply-a-coherent-visual-theme-for-the-initial-ui-color-palette-typography-spacing-and-component-styling-and-use-it-consistently-across-all-screens-implemented-for-the-imported-aegis-baseline-and-the-newly-added-features-avoid-blue-purple-as-primary-colors",
+      "featureTitle": "Define and apply a coherent visual theme for the initial UI (color palette, typography, spacing, and component styling) and use it consistently across all screens implemented for the imported AEGIS baseline and the newly added features. Avoid blue & purple as primary colors.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

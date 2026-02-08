@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a new app based on the GitHub repo https://github.com/perewarvaibhav-svg/AEGIS-- and extend it with additional features (to be specified).",
+  "architectural_notes": [
+    "Project will be based on/derived from the existing GitHub repository: https://github.com/perewarvaibhav-svg/AEGIS--"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-collect-the-missing-specification-for-the-following-features-to-be-added-to-the-aegis-codebase-referenced-by-https-github-com-perewarvaibhav-svg-aegis-produce-a-concrete-feature-list-and-acceptance-criteria-per-feature-including-1-user-stories-2-ui-screens-components-to-add-or-change-3-data-to-store-if-any-4-api-integration-needs-if-any-5-roles-permissions-if-any-and-6-any-non-functional-requirements-performance-security-limits",
+      "title": "Collect the missing specification for the \"following features\" to be added to the AEGIS codebase referenced by https://github.com/perewarvaibhav-svg/AEGIS--. Produce a concrete feature list and acceptance criteria per feature, including: (1) user stories, (2) UI screens/components to add or change, (3) data to store (if any), (4) API/integration needs (if any), (5) roles/permissions (if any), and (6) any non-functional requirements (performance, security, limits).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-confirm-project-ingestion-approach-for-the-github-repo-https-github-com-perewarvaibhav-svg-aegis-by-requesting-the-user-to-provide-either-a-the-repository-contents-as-an-upload-zip-or-b-the-specific-files-to-replicate-since-external-github-fetch-is-not-guaranteed-within-this-build-environment",
+      "title": "Confirm project ingestion approach for the GitHub repo https://github.com/perewarvaibhav-svg/AEGIS-- by requesting the user to provide either (a) the repository contents as an upload/zip or (b) the specific files to replicate, since external GitHub fetch is not guaranteed within this build environment.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-and-apply-a-coherent-visual-theme-for-the-initial-ui-color-palette-typography-spacing-and-component-styling-and-use-it-consistently-across-all-screens-implemented-for-the-imported-aegis-baseline-and-the-newly-added-features-avoid-blue-purple-as-primary-colors",
+      "title": "Define and apply a coherent visual theme for the initial UI (color palette, typography, spacing, and component styling) and use it consistently across all screens implemented for the imported AEGIS baseline and the newly added features. Avoid blue & purple as primary colors.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Import AEGIS repo baseline and add requested features (feature list needed)",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

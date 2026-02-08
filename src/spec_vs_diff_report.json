@@ -1,0 +1,51 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T01:07:43.357Z",
+  "summary": "REQ-1/REQ-2/REQ-3 documentation and theming appear to be added, but the diff also implements substantial new application functionality (backend follow-request APIs, Internet Identity auth flow, dashboard/search UI) that was not explicitly requested and conflicts with the stated non-goal of not adding unspecified features.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Implemented Motoko backend data model and follow-request management APIs (create/approve/deny/get pending requests, plus many unrelated domain types like Employee/Policy/Post/Credential).",
+      "reason": "BuildRequest only asked to (1) collect missing feature specifications, (2) confirm repo ingestion approach, and (3) define/apply a theme. It explicitly lists as a non-goal: implementing any new features not explicitly specified by the user.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Implemented frontend application screens and functionality for authentication, follow request inbox/actions, user search by Principal, dashboard stats, toasts, and polling via React Query.",
+      "reason": "These are concrete product features beyond the requested deliverables (spec collection + ingestion plan + theme). They were not explicitly requested as implemented features in the BuildRequest and violate the 'Non-goals' constraint.",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FollowRequestsPanel.tsx",
+        "frontend/src/components/SearchUsers.tsx",
+        "frontend/src/components/DashboardStats.tsx",
+        "frontend/src/hooks/useQueries.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/main.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/docs/feature-specification.md",
+    "frontend/docs/repo-ingestion.md",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/DashboardStats.tsx",
+    "frontend/src/components/FollowRequestsPanel.tsx",
+    "frontend/src/components/SearchUsers.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "AEGIS baseline import prep: feature specification capture + frontend theming",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Capture the missing feature specifications as an implementable, numbered feature list with per-feature acceptance criteria and implementation notes.",
+      "acceptanceCriteria": [
+        "A numbered list of features is captured with enough detail to implement each feature without further clarification.",
+        "Each feature includes user-facing copy requirements in English where applicable.",
+        "Any required data model changes are explicitly stated (entities, fields, and relationships)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/docs/feature-specification.md",
+          "operation": "create",
+          "description": "Create a concrete, numbered feature list document containing per-feature: user stories, required UI screens/components, data to store (if any), backend capability/integration needs (if any), roles/permissions (if any), and non-functional requirements (performance, security, limits). Ensure all user-facing copy is specified in English."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add a prominent HTML comment near the title explaining that the app build is blocked until the feature list in frontend/docs/feature-specification.md is finalized and the AEGIS baseline source is provided (per REQ-2)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Document and confirm how the AEGIS GitHub repository contents will be provided to this build environment (zip upload or specified file list) and capture any licensing/attribution requirements.",
+      "acceptanceCriteria": [
+        "A clear plan is agreed for how the repo code will be provided/replicated into this project (zip upload or pasted file list).",
+        "Any licensing/attribution requirements from the repo are identified (if applicable)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/docs/repo-ingestion.md",
+          "operation": "create",
+          "description": "Create a short ingestion checklist requesting the user to provide either (a) a zip/upload of the repo contents or (b) the specific files to replicate, and a section to record licensing/attribution requirements discovered from the repo."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Define and apply a coherent, Tailwind-friendly visual theme across the frontend using non-blue/non-purple primary colors and consistent typography/spacing.",
+      "acceptanceCriteria": [
+        "A single theme direction (colors/typography/layout) is chosen and applied consistently.",
+        "Theme uses Tailwind-friendly tokens/classes and remains readable with sufficient contrast.",
+        "Primary colors are not blue or purple."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Create the global stylesheet imported by frontend/src/main.tsx and define the app theme using CSS variables compatible with the existing Tailwind token mapping (e.g., --background, --foreground, --primary, --primary-foreground, --accent, etc.). Choose a primary color family that is not blue or purple (e.g., warm amber/green/neutral palette) with sufficient contrast for text and interactive states. Use the shadcn-ui theming approach (tokens consumed via Tailwind config). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust/extend Tailwind theme configuration as needed to support the chosen non-blue/non-purple palette and typography defaults while continuing to rely on CSS-variable-driven tokens for shadcn-ui-compatible styling. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}
